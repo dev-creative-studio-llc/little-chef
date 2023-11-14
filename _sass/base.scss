@@ -13,10 +13,10 @@ h5,
 }
 
 @media (min-width: 992px) {
-  .hero-gradient-lg {
+  .container-gradient-lg {
     background-size: 100% 100%;
     background-position: 0px 0px;
-    background-image: radial-gradient(75% 100% at 100% 50%, #C54172 0%, #FFB754 50%, #C2E3E4 100%) !important;
+    background-image: radial-gradient(100% 100% at 0% 0%, #FE6B60 0%, #FEE280 40%, #9EDBD9FF 90%) !important;
   }
 }
 
@@ -24,9 +24,9 @@ h5,
 
 
 @media (min-width: 768px) {
-  .hero-gradient-md {
+  .container-gradient-md {
     background-size: 100% 100%;
-background-position: 0px 0px;
-background-image: radial-gradient(100% 50% at 50% 0%, #C54172 0%, #FFB754 50%, #C2E3E4 100%);
+    background-position: 0px 0px;
+    background-image: radial-gradient(100% 100% at 0% 0%, #FE6B60 0%, #FEE280 40%, #9EDBD9FF 90%);
   }
 }

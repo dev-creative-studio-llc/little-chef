@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="container-fluid">
-    <div class="row row-cols-md-1 row-cols-lg-2 p-5 align-items-center hero-gradient-md hero-gradient-lg">
+    <div class="row row-cols-md-1 row-cols-lg-2 p-5 align-items-center">
         <div class="col text-md-center text-lg-start">
             <h1 class="card-title display-5 mb-4">Little Chef Restaurant:<br>Where Quality Meets Heart</h1>
             <p class="card-text fs-5 mb-4">With strength, honesty, and pride, we pledge to keep doing
@@ -21,7 +21,7 @@ layout: default
     </div>
 </div>
 <div class="container-fluid">
-    <div id="details" class="row row-cols-md-1 row-cols-lg-2 p-5 align-items-center">
+    <div id="details" class="row row-cols-md-1 row-cols-lg-2 p-5 align-items-center container-gradient-md container-gradient-lg">
         <div class="col d-md-none d-lg-block">
             <div class="container">
                 <img src="{{ site.baseurl }}/assets/img/banner2.png" class="img-fluid border rounded-3 shadow-lg"
@@ -31,30 +31,30 @@ layout: default
         <div class="col">
             <div class="row row-cols-2">
                 <div class="col">
-                    <div class="card h-100 border border-0 text-end">
+                    <div class="card h-100 border border-0 text-end bg-transparent">
                         <div class="card-body">
-                            <p class="card-title fw-semibold"><i class="bi bi-geo-alt-fill text-danger"></i> Location
-                            </p>
-                            <a class="card-link" href="https://goo.gl/maps/79WqFn2AeFe1pQdy9">152 Strode Ave
-                                Coatesville, PA 19320</a>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title fw-semibold"><i class="bi bi-telephone-fill text-danger"></i> Phone</p>
-                            <a class="card-link" href="tel:+16103843221">
-                                610-384-3221
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border border-0">
-                        <div class="card-body">
-                            <p class="card-title fw-semibold">Hours <i class="bi bi-clock-fill text-danger"></i></p>
+                            <p class="card-title fw-semibold">Hours</p>
                             <p class="card-text lh-lg">
                                 Monday- Closed<br>
                                 Tuesday 6AM–3PM<br>
                                 Wednesday-Friday 6AM–9PM<br>
                                 Saturday-Sunday 6AM–3PM</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border border-0 bg-transparent">
+                        <div class="card-body">
+                            <p class="card-title fw-semibold">Location</p>
+                            <a class="card-link link-danger" href="https://goo.gl/maps/79WqFn2AeFe1pQdy9">152 Strode Ave
+                                Coatesville, PA 19320</a>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title fw-semibold">Phone</p>
+                            <a class="card-link link-danger" href="tel:+16103843221">
+                                610-384-3221
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -62,35 +62,50 @@ layout: default
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container-fluid">
+    <div id="menus" class="row row-cols-md-1 p-5 align-items-start">
+        <div class="col">
+            <ul class="nav nav-tabs">
+                {% for menu in site.data.menus %}
+                <li class="nav-item">
+                    {% if forloop.first %}
+                    <a class="nav-link active" aria-current="page" href="#menus">{{menu.name}}</a>
+                    {% else %}
+                    <a class="nav-link" aria-current="page" href="#menus">{{menu.name}}</a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
     <!-- Breakfast Menu -->
     <div class="menu-section">
-      <h2>Breakfast Menu</h2>
-      <div class="menu-group">
-        <h4>Group 1</h4>
-        <div class="row">
-          <!-- Add cards for each dish in Group 1 -->
-          <!-- Repeat this block for other groups and dishes -->
-          <div class="col-md-4">
-            <div class="card">
-              <img src="dish1.jpg" class="card-img-top" alt="Dish 1 Image">
-              <div class="card-body">
-                <h5 class="card-title">Dish 1</h5>
-                <p class="card-text">Description of Dish 1.</p>
-                <p class="card-text">$10.99</p>
-              </div>
+        <h2>Breakfast Menu</h2>
+        <div class="menu-group">
+            <h4>Group 1</h4>
+            <div class="row">
+                <!-- Add cards for each dish in Group 1 -->
+                <!-- Repeat this block for other groups and dishes -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="dish1.jpg" class="card-img-top" alt="Dish 1 Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Dish 1</h5>
+                            <p class="card-text">Description of Dish 1.</p>
+                            <p class="card-text">$10.99</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat this block for other dishes in Group 1 -->
             </div>
-          </div>
-          <!-- Repeat this block for other dishes in Group 1 -->
         </div>
-      </div>
-      <!-- Repeat this block for other groups in the breakfast menu -->
+        <!-- Repeat this block for other groups in the breakfast menu -->
     </div>
 
     <!-- Everything Else Menu -->
     <div class="menu-section">
-      <h2>Everything Else Menu</h2>
-      <!-- Repeat the same structure as above for the "Everything Else" menu -->
+        <h2>Everything Else Menu</h2>
+        <!-- Repeat the same structure as above for the "Everything Else" menu -->
     </div>
 
-  </div>
+</div>

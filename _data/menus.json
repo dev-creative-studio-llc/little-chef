@@ -1,0 +1,30 @@
+[
+    {
+        "name": "All Day Menu",
+        "sections": [
+            {
+                "name": "Appetizers & Snacks",
+                "dishes": [
+                    {
+                        "name": "Battered Sweet Corn Nuggets",
+                        "price": "8.99"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Breakfast Menu",
+        "sections": [
+            {
+                "name": "Breakfast Sandwiches",
+                "dishes": [
+                    {
+                        "name": "Fried Egg & Cheese",
+                        "price": "4.99"
+                    }
+                ]
+            }
+        ]
+    }
+]
