@@ -1,30 +1,50 @@
-[
-    {
-        "name": "All Day Menu",
-        "sections": [
-            {
-                "name": "Appetizers & Snacks",
-                "dishes": [
-                    {
-                        "name": "Battered Sweet Corn Nuggets",
-                        "price": "8.99"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "Breakfast Menu",
-        "sections": [
-            {
-                "name": "Breakfast Sandwiches",
-                "dishes": [
-                    {
-                        "name": "Fried Egg & Cheese",
-                        "price": "4.99"
-                    }
-                ]
-            }
-        ]
-    }
-]
+{
+    "navItems": [
+        {
+            "name": "Everything",
+            "id": 1
+        },
+        {
+            "name": "Breakfast Menu",
+            "id": 2
+        },
+        {
+            "name": "All Day Menu",
+            "id": 3
+        }
+    ],
+    "sections": [
+        {
+            "name": "Appetizers & Snacks",
+            "dishes": [
+                {
+                    "name": "Battered Sweet Corn Nuggets",
+                    "price": "8.99"
+                },
+                {
+                    "name": "Nachos Supreme",
+                    "description": "Crisp corn tortilla chips with chili onions, lettuce, tomatoes, hot peppers, black olives, cheddar cheese, salsa and sour cream",
+                    "price": "12.99"
+                },
+                {
+                    "name": "Sophia's Cheesesteak Nachos",
+                    "description": "Tortilla chips, fresh steak meat, diced tomatoesm shredded lettuce, fried onions and melted cheddar",
+                    "price": "12.99"
+                },
+                {
+                    "name": "Homestyle Onion Rings",
+                    "price": "Small 5.99 • Large 10.99"
+                }
+            ]
+        },
+        {
+            "name": "Breakfast Sandwiches",
+            "dishes": [
+                {
+                    "name": "Fried Egg & Cheese",
+                    "price": "4.99"
+                }
+            ]
+        }
+    ]
+}
