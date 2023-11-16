@@ -85,14 +85,16 @@ layout: default
                     <!-- Add cards for each dish in Group 1 -->
                     <!-- Repeat this block for other groups and dishes -->
                     {% for dish in section.dishes %}
-                    <div class="col-md-3">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card h-100">
                             <div class="card-body">
-                                <p class="card-title fw-semibold">{{dish.name}}</p>
+                                <div class="d-flex justify-content-between">
+                                <p class="card-title fw-bold">{{dish.name}}</p>
+                                <p class="card-title">{{dish.price}}</p>
+                                </div>
                                 {% if dish.description %}
                                 <p class="card-text">{{dish.description}}</p>
                                 {% endif %}
-                                <p class="card-text">{{dish.price}}</p>
                             </div>
                         </div>
                     </div>
