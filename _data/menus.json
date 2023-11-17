@@ -1,18 +1,4 @@
 {
-    "navItems": [
-        {
-            "name": "Everything",
-            "id": 1
-        },
-        {
-            "name": "Breakfast Menu",
-            "id": 2
-        },
-        {
-            "name": "All Day Menu",
-            "id": 3
-        }
-    ],
     "sections": [
         {
             "name": "Appetizers & Snacks",
@@ -34,6 +20,65 @@
                 {
                     "name": "Homestyle Onion Rings",
                     "price": "Small 5.99 • Large 10.99"
+                },
+                {
+                    "name": "Cheese Steak Spring Rolls",
+                    "description": "Four golden fried spring rolls stuffed with Philly's finest shared steak, onions and melted American, served with your choice of sauce",
+                    "price": "11.99"
+                },
+                {
+                    "name": "Stuffed Potato Skins",
+                    "description": "Crispy fried potato skins loaded with bacon and cheddar cheese. Served with sour cream",
+                    "price": "6 Piece 8.99 • 10 Piece 13.99"
+                },
+                {
+                    "name": "Chicken Quesadilla",
+                    "description": "Feel no guilt as you enjoy mesquite chicken breast stuffed with caramelized onions, tomatoes, lettuce and melted cheeses folded inside warm flour tortillas and grilled. Served with salsa and sour cream",
+                    "price": "11.99"
+                },
+                {
+                    "name": "Tacos",
+                    "description": "Mexican mini tacos stuffed with meat and served with cheese sauce and sour cream",
+                    "price": "12 Piece 8.99 • 36 Piece 19.99"
+                },
+                {
+                    "name": "Mozzarella Marinara",
+                    "description": "Served with marinara sauce for dipping",
+                    "price": "5 Piece 6.99 • 10 Piece 12.99"
+                }
+            ]
+        },
+        {
+            "name": "French Fry Station",
+            "dishes": [
+                {
+                    "name": "French Fries",
+                    "price": "Small 4.49 • Large 8.99"
+                },
+                {
+                    "name": "Curly Fries",
+                    "description": "Add Cheese .99",
+                    "price": "Small 5.99 • Large 9.99"
+                },
+                {
+                    "name": "Sweet Potato Fries",
+                    "price": "Small 5.99 • Large 9.99"
+                },
+                {
+                    "name": "Smothered Fries",
+                    "description": "Loaded with bacon bits and cheddar cheese, served with ranch dressing",
+                    "price": "9.99"
+                }
+            ]
+        },
+        {
+            "name": "Buffalo Chicken Wings",
+            "subtitle": "Nobody does Buffalo Style like we do!",
+            "dishes": [
+                {
+                    "name": "",
+                    "description": "Sesame Teriyaki, Hot, Mild, Honey BBQ, Cajun, Al's Hot and Honey or Garlic Parmesan",
+                    "price": "10 Piece 13.99 • 15 Piece 19.99 • 20 Piece 27.99 • 30 Piece 39.99"
                 }
             ]
         },
