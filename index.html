@@ -2,31 +2,42 @@
 layout: default
 ---
 <div class="container-fluid">
-    <div class="row row-cols-1 p-5 mb-3 align-items-center bg-black">
+    <div class="row row-cols-1 p-5 align-items-center bg-black">
         <div class="col text-center p-5">
             <img src="{{ site.baseurl }}/assets/img/hero_design2.svg" class="img-fluid" alt="Hero Banner"
-                loading="lazy">            
+                loading="lazy">
         </div>
         <div class="col text-center">
             <a href="https://goo.gl/maps/79WqFn2AeFe1pQdy9" class="btn btn-info btn-lg px-5 me-sm-4"><i
-                class="bi bi-geo-alt-fill"></i>
-            Find Us</a>
-        <a href="tel:+16103843221" class="btn btn-outline-info btn-lg px-5"><i
-                class="bi bi-telephone-fill"></i> Call
-            Us</a>
+                    class="bi bi-geo-alt-fill"></i>
+                Find Us</a>
+            <a href="tel:+16103843221" class="btn btn-outline-info btn-lg px-5"><i class="bi bi-telephone-fill"></i>
+                Call
+                Us</a>
         </div>
     </div>
 </div>
-<div class="container-fluid">
-    <div id="details" class="row row-cols-1 py-5 mb-3 align-items-center container-gradient">
-        <div class="col">
-            <div class="row row-cols-lg-3 text-blur">
+<div id="details" class="container-fluid">
+    <div class="row row-cols-1 p-5 align-items-center details-container">
+        <div class="col pt-5 text-center">
+            <a class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover fs-1 fw-medium text-danger"
+                href="https://goo.gl/maps/79WqFn2AeFe1pQdy9">152 Strode
+                Ave
+                Coatesville, PA 19320</a>
+        </div>
+        <div class="col text-center">
+            <a class="link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover fs-2 text-white"
+                href="tel:+16103843221">
+                (610) 384 - 3221
+            </a>
+        </div>
+        <div class="col py-4">
+            <div class="row row-cols-lg-2 text-blur align-items-center">
                 <div class="col">
                     <div class="card h-100 border border-0 text-end bg-transparent text-white">
                         <div class="card-body font-spacing-1 ">
-                            <p class="card-title fs-5">Business Hours <i class="bi bi-clock-fill text-danger"></i>
-                            </p>
-                            <p class="card-text lh-lg fs-6">
+                            <p class="card-title fs-4 fw-semibold">Business Hours</p>
+                            <p class="card-text lh-lg fs-5">
                                 Monday - Closed<br>
                                 Tuesday 6AM - 3PM<br>
                                 Wednesday - Friday 6AM - 9PM<br>
@@ -35,31 +46,10 @@ layout: default
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 border border-0 bg-transparent text-center text-white">
-                        <div class="card-body font-spacing-1">
-                            <p class="card-title fs-5"><i class="bi bi-geo-alt-fill text-danger"></i>
-                                Location</p>
-                            <a class="card-link link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover fs-6 fw-medium text-white"
-                                href="https://goo.gl/maps/79WqFn2AeFe1pQdy9">152 Strode
-                                Ave
-                                Coatesville, PA 19320</a>
-                        </div>
-                        <div class="card-body font-spacing-1">
-                            <p class="card-title fs-5"><i class="bi bi-telephone-fill text-danger"></i>
-                                Phone</p>
-                            <a class="card-link link-dark link-underline link-underline-opacity-0 link-underline-opacity-75-hover fs-6 fw-medium text-white"
-                                href="tel:+16103843221">
-                                (610) 384 - 3221
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
                     <div class="card h-100 border border-0 text-start bg-transparent text-white">
                         <div class="card-body font-spacing-1">
-                            <p class="card-title fs-5">Delivery Hours <i class="bi bi-clock-fill text-danger"></i>
-                            </p>
-                            <p class="card-text lh-lg fs-6">
+                            <p class="card-title fs-4 fw-semibold">Delivery Hours</p>
+                            <p class="card-text lh-lg fs-5">
                                 Monday - Closed<br>
                                 Tuesday: 7AM - 3PM<br>
                                 Wednesday - Friday 7AM - 9PM<br>
@@ -69,33 +59,29 @@ layout: default
                 </div>
             </div>
         </div>
+        <div class="col text-center">
+            <img src="{{ site.baseurl }}/assets/img/details_footer.svg" alt="Brand Logo" width="128" height="128"
+                class="img-fluid d-inline-block align-text-top">
+        </div>
     </div>
 </div>
-<div class="container-fluid">
-    <div id="menus" class="row row-cols-1 p-5 g-4 align-items-start">
+<div id="menus" class="container-fluid">
+    <div class="row row-cols-1 p-5 g-4 align-items-start">
         <div class="col">
             <div class="row g-3 align-items-center">
                 <div class="col-auto">
-                    <p class="col-form-label">Menu</p>
+                    <p class="col-form-label text-danger fw-semibold">Menu</p>
                 </div>
                 <div class="col-md-4 col-lg-3 me-auto">
-                    <input class="form-control" list="datalistOptions" id="menuSearch"
-                        placeholder="Enter a dish name to search...">
-                    <datalist id="datalistOptions">
-                        {% for section in site.data.menus.sections %}
-                        {% for dish in section.dishes %}
-                        <option value="{{dish.name}}">
-                            {% endfor %}
-                            {% endfor %}
-                    </datalist>
+                    <input class="form-control" id="menuSearch" placeholder="Enter a dish name to search...">
                 </div>
                 <div class="col-auto">
-                    <img src="{{ site.baseurl }}/assets/img/logo_inner_circle.png" alt="Brand Logo" width="32"
-                        height="32" class="img-fluid d-inline-block align-text-top">
+                    <img src="{{ site.baseurl }}/assets/img/coffe-cup.png" alt="Coffee Cup" width="64" height="64"
+                        class="img-fluid d-inline-block align-text-top">
                 </div>
             </div>
         </div>
-        <div class="col">
+        <div id="menu" class="col">
             {% for section in site.data.menus.sections %}
             <div class="menu-group mb-5">
                 <h2 class="mb-3">{{section.name}}</h2>
@@ -120,6 +106,29 @@ layout: default
                 </div>
             </div>
             {% endfor %}
+        </div>
+        <div id="searchResults" class="col">
+            <div class="row g-3 mb-5">
+                {% for section in site.data.menus.sections %}
+                <!-- Add cards for each dish in Group 1 -->
+                <!-- Repeat this block for other groups and dishes -->
+                {% for dish in section.dishes %}
+                <div id="{{dish.id}}" class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="card-title fw-bold">{{dish.name}}</p>
+                                <p class="card-title">{{dish.price}}</p>
+                            </div>
+                            {% if dish.description %}
+                            <p class="card-text">{{dish.description}}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>

@@ -1,3 +1,5 @@
+$red:     #8E171D;
+
 @import "bootstrap/bootstrap";
 
 body {
@@ -14,12 +16,8 @@ h5,
   font-family: 'Lobster', sans-serif;
 }
 
-.container-gradient {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/gradient-background.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: block;
+.details-container {
+  background-color: #958BDA;
 }
 
 .text-blur {
