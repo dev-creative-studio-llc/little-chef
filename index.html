@@ -7,7 +7,7 @@ layout: default
             <img src="{{ site.baseurl }}/assets/img/hero_design2.svg" class="img-fluid" alt="Hero Banner"
                 loading="lazy">
         </div>
-        <div class="col text-center">
+        <div class="col text-center pb-5">
             <a href="https://goo.gl/maps/79WqFn2AeFe1pQdy9" class="btn btn-info btn-lg px-5 me-sm-4"><i
                     class="bi bi-geo-alt-fill"></i>
                 Find Us</a>
@@ -31,7 +31,7 @@ layout: default
                 (610) 384 - 3221
             </a>
         </div>
-        <div class="col py-4">
+        <div class="col pt-4">
             <div class="row row-cols-lg-2 text-blur align-items-center">
                 <div class="col">
                     <div class="card h-100 border border-0 text-end bg-transparent text-white">
@@ -59,7 +59,7 @@ layout: default
                 </div>
             </div>
         </div>
-        <div class="col text-center">
+        <div class="col text-center pb-5">
             <img src="{{ site.baseurl }}/assets/img/details_footer.svg" alt="Brand Logo" width="128" height="128"
                 class="img-fluid d-inline-block align-text-top">
         </div>
@@ -85,16 +85,21 @@ layout: default
             {% for section in site.data.menus.sections %}
             <div class="menu-group mb-5">
                 <h2 class="mb-3">{{section.name}}</h2>
+                <p class="mb-3 fs-6 fw-medium">{{section.subtitle}}</p>
                 <div class="row g-3">
                     <!-- Add cards for each dish in Group 1 -->
                     <!-- Repeat this block for other groups and dishes -->
                     {% for dish in section.dishes %}
-                    <div class="col-md-6 col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="card h-100">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
+                                    {% if dish.name %}
                                     <p class="card-title fw-bold">{{dish.name}}</p>
+                                    {% endif %}
+                                    {% if dish.price %}
                                     <p class="card-title">{{dish.price}}</p>
+                                    {% endif %}
                                 </div>
                                 {% if dish.description %}
                                 <p class="card-text">{{dish.description}}</p>
@@ -108,12 +113,13 @@ layout: default
             {% endfor %}
         </div>
         <div id="searchResults" class="col">
+            <h2 class="mb-3">Results</h2>
             <div class="row g-3 mb-5">
                 {% for section in site.data.menus.sections %}
                 <!-- Add cards for each dish in Group 1 -->
                 <!-- Repeat this block for other groups and dishes -->
                 {% for dish in section.dishes %}
-                <div id="{{dish.id}}" class="col-md-6 col-lg-4">
+                <div id="{{dish.id}}" class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">

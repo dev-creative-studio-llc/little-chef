@@ -2,6 +2,7 @@
     "sections": [
         {
             "name": "Appetizers & Snacks",
+            "subtitle": "",
             "dishes": [
                 {
                     "id": "as1",
@@ -10,28 +11,16 @@
                     "price": "8.99"
                 },
                 {
-                    "id": "as2",
-                    "name": "Nachos Supreme",
-                    "description": "Crisp corn tortilla chips with chili onions, lettuce, tomatoes, hot peppers, black olives, cheddar cheese, salsa and sour cream",
-                    "price": "12.99"
-                },
-                {
-                    "id": "as3",
-                    "name": "Sophia's Cheesesteak Nachos",
-                    "description": "Tortilla chips, fresh steak meat, diced tomatoesm shredded lettuce, fried onions and melted cheddar",
-                    "price": "12.99"
-                },
-                {
                     "id": "as4",
                     "name": "Homestyle Onion Rings",
                     "description": "",
                     "price": "Small 5.99 • Large 10.99"
                 },
                 {
-                    "id": "as5",
-                    "name": "Cheese Steak Spring Rolls",
-                    "description": "Four golden fried spring rolls stuffed with Philly's finest shared steak, onions and melted American, served with your choice of sauce",
-                    "price": "11.99"
+                    "id": "as9",
+                    "name": "Mozzarella Marinara",
+                    "description": "Served with marinara sauce for dipping",
+                    "price": "5 Piece 6.99 • 10 Piece 12.99"
                 },
                 {
                     "id": "as6",
@@ -40,10 +29,10 @@
                     "price": "6 Piece 8.99 • 10 Piece 13.99"
                 },
                 {
-                    "id": "as7",
-                    "name": "Chicken Quesadilla",
-                    "description": "Feel no guilt as you enjoy mesquite chicken breast stuffed with caramelized onions, tomatoes, lettuce and melted cheeses folded inside warm flour tortillas and grilled. Served with salsa and sour cream",
-                    "price": "11.99"
+                    "id": "as3",
+                    "name": "Sophia's Cheesesteak Nachos",
+                    "description": "Tortilla chips, fresh steak meat, diced tomatoesm shredded lettuce, fried onions and melted cheddar",
+                    "price": "12.99"
                 },
                 {
                     "id": "as8",
@@ -52,15 +41,28 @@
                     "price": "12 Piece 8.99 • 36 Piece 19.99"
                 },
                 {
-                    "id": "as9",
-                    "name": "Mozzarella Marinara",
-                    "description": "Served with marinara sauce for dipping",
-                    "price": "5 Piece 6.99 • 10 Piece 12.99"
+                    "id": "as2",
+                    "name": "Nachos Supreme",
+                    "description": "Crisp corn tortilla chips with chili onions, lettuce, tomatoes, hot peppers, black olives, cheddar cheese, salsa and sour cream",
+                    "price": "12.99"
+                },
+                {
+                    "id": "as5",
+                    "name": "Cheese Steak Spring Rolls",
+                    "description": "Four golden fried spring rolls stuffed with Philly's finest shared steak, onions and melted American, served with your choice of sauce",
+                    "price": "11.99"
+                },
+                {
+                    "id": "as7",
+                    "name": "Chicken Quesadilla",
+                    "description": "Feel no guilt as you enjoy mesquite chicken breast stuffed with caramelized onions, tomatoes, lettuce and melted cheeses folded inside warm flour tortillas and grilled. Served with salsa and sour cream",
+                    "price": "11.99"
                 }
             ]
         },
         {
             "name": "French Fry Station",
+            "subtitle": "",
             "dishes": [
                 {
                     "id": "ffs1",
@@ -94,9 +96,177 @@
             "dishes": [
                 {
                     "id": "bcw1",
-                    "name": "Nobody does Buffalo Style like we do!",
+                    "name": "",
                     "description": "10 Piece 13.99 • 15 Piece 19.99<br>20 Piece 27.99 • 30 Piece 39.99<br><br>Sesame Teriyaki, Hot, Mild, Honey BBQ, Cajun, Al's Hot and Honey or Garlic Parmesan",
                     "price": ""
+                }
+            ]
+        },
+        {
+            "name": "Homemade Soups",
+            "subtitle": "",
+            "dishes": [
+                {
+                    "id": "hs1",
+                    "name": "Chili",
+                    "description": "Full of ground sirloin, with just the right amount of beans and spices.",
+                    "price": "Cup 4.99 • Bowl 5.99"
+                },
+                {
+                    "id": "hs2",
+                    "name": "French Onion \"Au Gratin\"",
+                    "description": "A rich broth of onion and sherry topped with provolone cheese",
+                    "price": "Cup 4.99 • Bowl 5.99"
+                },
+                {
+                    "id": "hs3",
+                    "name": "Today's Soup",
+                    "description": "Choose from our repertoire of clear, cream soups, bisques and chowders.",
+                    "price": "Cup 4.99 • Bowl 5.99"
+                }
+            ]
+        },
+        {
+            "name": "From The Garden",
+            "subtitle": "Add Bacon Bits 0.99 • Extra Dressing 0.59",
+            "dishes": [
+                {
+                    "id": "ftg1",
+                    "name": "House Tossed Salad",
+                    "description": "",
+                    "price": "Small 5.99 • Large 9.99"
+                },
+                {
+                    "id": "ftg2",
+                    "name": "Grilled Chicken Salad",
+                    "description": "",
+                    "price": "13.99"
+                },
+                {
+                    "id": "ftg3",
+                    "name": "John's Famous Greek Salad",
+                    "description": "",
+                    "price": "14.99"
+                },
+                {
+                    "id": "ftg4",
+                    "name": "Chef's American Field Salad",
+                    "description": "Fresh garden greens with sliced ham, turkey, roast beef, American and Cheddar cheese, tomatoes, cucumber, hard boiled eggs and choice of dressing",
+                    "price": "13.99"
+                },
+                {
+                    "id": "ftg6",
+                    "name": "Classic Caesar",
+                    "description": "With Grilled Chicken 13.99<br>With Salmon 14.99<br>With Bay Shrimp 14.99<br>With English Cut Prime Rib 15.99",
+                    "price": "9.99"
+                },
+                {
+                    "id": "ftg7",
+                    "name": "Country Fried Chicken Salad",
+                    "description": "Breaded and fried chicken tenderloins atop romaine and iceberg lettuce with dice eggs, shredded cheese, tomatoes, cucumber, bacon and choice of dressing",
+                    "price": "13.99"
+                },
+                {
+                    "id": "ftg8",
+                    "name": "Chopped Salad",
+                    "description": "A delicious blend of chopped romaine and iceberg, grilled chicken breast, tomato, avocado, bacon, corn/cucumber salsa and fresh apple with house vinaigrette",
+                    "price": "13.99"
+                },
+                {
+                    "id": "ftg5",
+                    "name": "Fresh Seasonal Fruit Salad",
+                    "description": "",
+                    "price": "9.99"
+                }
+            ]
+        },
+        {
+            "name": "Stir Fry and Pasta",
+            "subtitle": "Served with soup or salad, rolls or garlic bread.",
+            "dishes": [
+                {
+                    "id": "sfp1",
+                    "name": "Little Chef Stir Fry",
+                    "description": "Fresh oriental vegetables tossed in a teriyaki sauce nestled in a bed of fresh steamy pasta or seasoned rice<br><br>Chicken 17.99 • Beef Tip 17.99 • Shrimp 18.99<br>Combo 20.99",
+                    "price": ""
+                },
+                {
+                    "id": "sfp2",
+                    "name": "Chicken and Broccoli",
+                    "description": "Tossed penne pasta with broccoli and alfredo sauce",
+                    "price": "17.99"
+                },
+                {
+                    "id": "sfp3",
+                    "name": "Spaghetti",
+                    "description": "Served with our zesty meat sauce and grated parmesan cheese with meatballs or Italian sausage",
+                    "price": "14.99"
+                },
+                {
+                    "id": "sfp4",
+                    "name": "Jambalaya",
+                    "description": "Traditional New Orleans spiced beef, sausage, chicken, shrimp over rice or pasta",
+                    "price": "19.99"
+                },
+                {
+                    "id": "sfp5",
+                    "name": "Linguine Alfredo",
+                    "description": "Delicate pasta tossed with tomatoes, mushrooms, crisp bacon and shaved parmesan cheese in alfredo sauce<br><br>Add Chicken 17.99 • Shrimp 18.99 • Combo 20.99",
+                    "price": "14.99"
+                },
+                {
+                    "id": "sfp6",
+                    "name": "Beef Tips N' Mushrooms",
+                    "description": "Sauteed beef medallions with fresh garlic, basil and mushrooms in a red wine marinara sauce served over rice or pasta",
+                    "price": "19.99"
+                }
+            ]
+        },
+        {
+            "name": "Classics",
+            "subtitle": "Served with choice of two vegetables, fresh rolls and butter",
+            "dishes": [
+                {
+                    "id": "c1",
+                    "name": "Roast Turkey",
+                    "description": "Hot oven fresh breast of turkey over a bed of homemade stuffing topped with turkey gravy and garnished with cranberry sauce",
+                    "price": "18.99"
+                },
+                {
+                    "id": "c2",
+                    "name": "Liver and Onion",
+                    "description": "",
+                    "price": "14.99"
+                },
+                {
+                    "id": "c3",
+                    "name": "Homestyle Meatloaf",
+                    "description": "Fresh baked with a medley of vegetables and topped with beef gravy",
+                    "price": "14.99"
+                },
+                {
+                    "id": "c4",
+                    "name": "Virginia Ham Steak",
+                    "description": "Grilled Virginia ham with brown sugar and topped with golden pineapple sauce",
+                    "price": "15.99"
+                },
+                {
+                    "id": "c5",
+                    "name": "Grilled Chicken Breast",
+                    "description": "",
+                    "price": "15.99"
+                },
+                {
+                    "id": "c6",
+                    "name": "Salisbury Steak",
+                    "description": "",
+                    "price": "14.99"
+                },
+                {
+                    "id": "c7",
+                    "name": "Fried Chicken Dinner",
+                    "description": "Four pieces",
+                    "price": "14.99"
                 }
             ]
         },

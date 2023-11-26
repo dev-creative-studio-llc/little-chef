@@ -1,16 +1,16 @@
 window.addEventListener('load', (event) => {
-    myFunction('');
+    searchMenu('');
 });
 
 document.getElementById('menuSearch').addEventListener('keyup', function (event) {
     // Access the input value using event.target.value
     let inputValue = event.target.value;
 
-    myFunction(inputValue);
+    searchMenu(inputValue);
 });
 
 
-function myFunction(inputValue) {
+function searchMenu(inputValue) {
     let menu = document.getElementById('menu')
     let searchResults = document.getElementById('searchResults')
 
@@ -36,7 +36,6 @@ function myFunction(inputValue) {
             menuSections.forEach(function (section) {
                 section.dishes.forEach(function (dish) {
                     let divDish = document.getElementById(dish.id)
-
                     if (dish.name.toLowerCase().includes(inputValue) || dish.description.toLowerCase().includes(inputValue) || dish.price.toLowerCase().includes(inputValue)) {
                         if (divDish)
                             divDish.style.display = 'block';
