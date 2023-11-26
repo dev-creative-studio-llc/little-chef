@@ -185,12 +185,6 @@
             "subtitle": "Served with soup or salad, rolls or garlic bread.",
             "dishes": [
                 {
-                    "id": "sfp1",
-                    "name": "Little Chef Stir Fry",
-                    "description": "Fresh oriental vegetables tossed in a teriyaki sauce nestled in a bed of fresh steamy pasta or seasoned rice<br><br>Chicken 17.99 • Beef Tip 17.99 • Shrimp 18.99<br>Combo 20.99",
-                    "price": ""
-                },
-                {
                     "id": "sfp2",
                     "name": "Chicken and Broccoli",
                     "description": "Tossed penne pasta with broccoli and alfredo sauce",
@@ -207,6 +201,12 @@
                     "name": "Jambalaya",
                     "description": "Traditional New Orleans spiced beef, sausage, chicken, shrimp over rice or pasta",
                     "price": "19.99"
+                },
+                {
+                    "id": "sfp1",
+                    "name": "Little Chef Stir Fry",
+                    "description": "Fresh oriental vegetables tossed in a teriyaki sauce nestled in a bed of fresh steamy pasta or seasoned rice<br><br>Chicken 17.99 • Beef Tip 17.99 • Shrimp 18.99<br>Combo 20.99",
+                    "price": ""
                 },
                 {
                     "id": "sfp5",
@@ -227,16 +227,28 @@
             "subtitle": "Served with choice of two vegetables, fresh rolls and butter",
             "dishes": [
                 {
-                    "id": "c1",
-                    "name": "Roast Turkey",
-                    "description": "Hot oven fresh breast of turkey over a bed of homemade stuffing topped with turkey gravy and garnished with cranberry sauce",
-                    "price": "18.99"
+                    "id": "c5",
+                    "name": "Grilled Chicken Breast",
+                    "description": "",
+                    "price": "15.99"
+                },
+                {
+                    "id": "c6",
+                    "name": "Salisbury Steak",
+                    "description": "",
+                    "price": "14.99"
                 },
                 {
                     "id": "c2",
                     "name": "Liver and Onion",
                     "description": "",
                     "price": "14.99"
+                },
+                {
+                    "id": "c1",
+                    "name": "Roast Turkey",
+                    "description": "Hot oven fresh breast of turkey over a bed of homemade stuffing topped with turkey gravy and garnished with cranberry sauce",
+                    "price": "18.99"
                 },
                 {
                     "id": "c3",
@@ -249,18 +261,6 @@
                     "name": "Virginia Ham Steak",
                     "description": "Grilled Virginia ham with brown sugar and topped with golden pineapple sauce",
                     "price": "15.99"
-                },
-                {
-                    "id": "c5",
-                    "name": "Grilled Chicken Breast",
-                    "description": "",
-                    "price": "15.99"
-                },
-                {
-                    "id": "c6",
-                    "name": "Salisbury Steak",
-                    "description": "",
-                    "price": "14.99"
                 },
                 {
                     "id": "c7",
